@@ -146,7 +146,6 @@ body {
     #nav-menu {
         height: 11vh;
         flex-direction: column;
-        border-bottom: 1px solid #fff;
     }
 
     #nav-menu ul {
