@@ -19,6 +19,23 @@
 }
 
 /* -----------------About---------------- */
+.header-text {
+    margin-top: 20%;
+    font-size: 18px;
+}
+
+.header-text p {
+    margin-top: 5px;
+}
+
+.header-text h1 {
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+.header-text h1 span {
+    color: #ff004f;
+}
 #About_cont{
     writing-mode:horizontal-tb;
     scroll-padding-top: -10px;
