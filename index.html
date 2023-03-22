@@ -9,11 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <script src="https://kit.fontawesome.com/e6eb89211f.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css/">
 
 </head>
 
@@ -22,16 +26,16 @@
     <header>
         <nav>
             <div id="nav-menu" class="h-nav expend">
-                <img src="./Images/logo.png.png" class="logo">
+                <img src="./Images/logo_withoutBg.png" class="logo">
                 <ul id="nav_list" class="v-nav">
-                    <li><a href="#Home" class="nav-link home active">Home</a></li>
-                    <li><a href="#about" class="nav-link about">About</a></li>
-                    <li><a href="#skills" class="nav-link skills">Skills</a></li>
-                    <li><a href="#projects" class="nav-link projects">Projects</a></li>
-                    <li><a href="#contact" class="nav-link contact">Contact</a></li>
-                    <li><a href="https://drive.google.com/uc?id=1T80SkoPVnuLICsYl9WRw-J3qJ1hpbiCb&export=download"
-                            target="_parent" download="" id="resume-button-1"><span><svg class="download nav-link resume"
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <li class="nav-link home"><a href="#home">Home</a></li>
+                    <li class="nav-link about"><a href="#about">About</a></li>
+                    <li class="nav-link skills"><a href="#skills">Skills</a></li>
+                    <li class="nav-link projects"><a href="#projects">Projects</a></li>
+                    <li class="nav-link contact"><a href="#contact">Contact</a></li>
+                    <li class="nav-link resume" id="resume-button-1"><a onclick="window.open('https://drive.google.com/file/d/1T80SkoPVnuLICsYl9WRw-J3qJ1hpbiCb/view?usp=share_link')" href="https://drive.google.com/uc?id=1T80SkoPVnuLICsYl9WRw-J3qJ1hpbiCb&export=download" target="_blank" download="Amit_Chakraborty_Resume.pdf" id="resume-link-1"><span><svg
+                                    class="download nav-link resume" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512">
                                     <path
                                         d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
                                 </svg></span> Resume</a></li>
@@ -45,22 +49,32 @@
         </nav>
 
     </header>
+    <!---------------------Home---------------------->
     <section>
-        <div id="header">
-            <div id="container">
-                <div id="Home" class="nav-link home">
+        <div>
+            <div id="container" >
+                <div id="home" class="nav-link home">
                     <div class="header-text">
-                        <h1 id="user-detail-name">Hi, I'm <br><span>Amit </span> Chakraborty</h1>
-                        <p>Java Backend Developer</p>
-                        <button class="resume_button" id="resume-button-2"><a
+                        <h1 id="user-detail-name">Hello, I'm <br><span>Amit </span> Chakraborty</h1>
+                        <p class="role_visible">I'm a Java Backend Developer</p>
+                        <div class="wrapper">
+                            <div class="static-text">I'm a</div>
+                            <ul class="dynamic-texts">
+                                <li><span>Java Backend Developer</span></li>
+                            </ul>
+                        </div>
+
+                        
+
+                        <button class="resume_button" id="resume-button-2"><a onclick="window.open('https://drive.google.com/file/d/1T80SkoPVnuLICsYl9WRw-J3qJ1hpbiCb/view?usp=share_link')"
                                 href="https://drive.google.com/uc?id=1T80SkoPVnuLICsYl9WRw-J3qJ1hpbiCb&export=download"
-                                target="_parent" download=""><span><svg class="download" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 512 512">
+                                target="_blank" download="Amit_Chakraborty_Resume.pdf" id="resume-link-2"><span><svg class="download"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path
                                             d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
                                     </svg></span> Resume</a></button>
                     </div>
-                    <div id="Profile_image" class="home-img"><img src="./Images/Profile_image.jpg"></div>
+                    <div id="Profile_image" ><img src="./Images/Profile_imag_withouBg.png" class="home-img"></div>
                 </div>
 
             </div>
@@ -68,171 +82,368 @@
     </section>
     <!---------------------About---------------------->
     <section>
-        <div id="about">
-            <div class="about_heading">
-                <div class="blankLine"></div>
-                <div>
-                    <h3>About&nbsp;Me</h3>
+        <div id="About_cont">
+            <div id="about" class="about section">
+                <div class="about_heading">
+                    <div class="blankLine"></div>
+                    <div>
+                        <h3>About&nbsp;Me</h3>
+                    </div>
+                    <div class="blankLine"></div>
                 </div>
-                <div class="blankLine"></div>
-            </div>
-            <div>
-                <p ><span><svg class="quote" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 448 512">
-                            <path
-                                d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z" />
-                        </svg></span id="user-detail-intro">A hardworking and competent JAVA backend developer, with a strong proficiency in
-                    designing and implementing complex systems using various JAVA technologies.
-                    A deep understanding of data structures, algorithms which enables me to create efficient, scalable,
-                    and maintainable code.
-                    haveing a passion for constantly improving my skills and taking on new challenges.
-                    <span><svg class="quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                            <path
-                                d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z" />
-                        </svg></span>
-                </p>
-            </div>
-            <div>
-                <ul>
-                    <li> <svg class="contact_icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
-                        </svg>Purulia, West Bengal</li>
-                    <li><svg class="contact_icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path
-                                d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
-                        </svg>+91 9800255068</li>
-                    <li><svg class="contact_icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path
-                                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
-                        </svg><a href=""
-                            style="text-decoration: none; cursor: pointer; color: #fff;">amitkumar51997@gmail.com</a>
-                    </li>
-                    <li><svg class="contact_icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                            <path
-                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-                        </svg><a href="" style="text-decoration: none; cursor: pointer; color: #fff;">Github</a></li>
-                    <li><svg class="contact_icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                            <path
-                                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-                        </svg> <a href="" style="text-decoration: none; cursor: pointer; color: #fff;">Linkedin</a></li>
+                <div>
+                    <p><span><svg class="quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z" />
+                            </svg></span id="user-detail-intro">A hardworking and competent JAVA backend developer, with
+                        a
+                        strong proficiency in
+                        designing and implementing complex systems using various JAVA technologies.
+                        A deep understanding of data structures, algorithms which enables me to create efficient,
+                        scalable,
+                        and maintainable code.
+                        haveing a passion for constantly improving my skills and taking on new challenges.
+                        <span><svg class="quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z" />
+                            </svg></span>
+                    </p>
+                </div>
+                <div>
+                    <ul>
+                        <li> <svg class="contact_icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                            </svg>Purulia, West Bengal</li>
+                        <li id="contact-phone"><svg class="contact_icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                            </svg>+91 9800255068</li>
+                        <li id="contact-email"><svg class="contact_icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path
+                                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                            </svg><a href="https://mail.google.com/mail/u/0/"
+                                target="_blank" style="text-decoration: none; cursor: pointer; color: #fff;">amitkumar51997@gmail.com</a>
+                        </li>
+                        <li id="contact-github"><svg class="contact_icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                            </svg><a href="https://github.com/Amit0458" target="_blank" style="text-decoration: none; cursor: pointer; color: #fff;">Github</a>
+                        </li>
+                        <li id="contact-linkedin"><svg class="contact_icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                            </svg> <a href="https://www.linkedin.com/in/amit-chakrabortty-568213109/" target="_blank" style="text-decoration: none; cursor: pointer; color: #fff;">Linkedin</a>
+                        </li>
 
-                </ul>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
     <!--------------------Skills---------------------->
     <section>
         <div id="skills">
-            <div class="skills_heading">
-                <div class="blankLine"></div>
-                <div>
-                    <h3>Skills</h3>
-                </div>
-                <div class="blankLine"></div>
+        <div class="skills_heading">
+            <div class="blankLine"></div>
+            <div>
+                <h3>Skills</h3>
             </div>
-            <div id="tech_satcks">
-                <div>
-                    <ul>
-                        <li style="--i:12;--clr:#1877f2;">
-                            <a href="#" style="pointer-events: none"><span><img
-                                        src="https://w1.pngwing.com/pngs/136/126/png-transparent-javascript-logo-angularjs-nodejs-computer-programming-web-development-computer-software-jquery-yellow.png"
-                                        alt="#"></span>JavaScript</a>
-                        </li>
-                        <li style="--i:11;--clr:#25d366;">
-                            <a href="" style="pointer-events: none" ><span><img
-                                        src="https://e7.pngegg.com/pngimages/510/15/png-clipart-java-programming-computer-programming-programming-language-android-coffee-jar-text-logo.png"
-                                        alt="#"></span>java</a>
-                        </li>
-                        <li style="--i:10;--clr:#1da1f2;">
-
-                            <a href="" style="pointer-events: none"><span><img
-                                src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png"
-                                alt="#"></span>C</a>
-                            
-
-                        </li>
-                    </ul>
+            <div class="blankLine"></div>
+        </div>
+        <div id="skills_container">
+            <div id="tech_stacks">
+                <span><h1>Tech Stacks</h1></span>
+                <div id="tech_stack_container">
+                    <div class="skills-card">
+                        <div><img class="tech_satack_card_img skills-card-img"
+                                src="Images/techStack_hyml_logo.png"
+                                alt=""></div>
+                        <div class="skills-card-name">HTML</div>
+                    </div>
+                    <div class="skills-card">
+                        <div><img class="tech_satack_card_img skills-card-img"
+                                src="Images/techStack_css.png"
+                                alt=""></div>
+                        <div class="skills-card-name">CSS</div>
+                    </div>
+                    <div class="skills-card">
+                        <div><img class="tech_satack_card_img skills-card-img"
+                                src="Images/techStack_js_logo.png"
+                                alt=""></div>
+                        <div class="skills-card-name">JavaScript</div>
+                    </div>
+                    <div class="skills-card">
+                        <div><img class="tech_satack_card_img skills-card-img"
+                                src="Images/techStack_JAva(1)_logo.png"
+                                alt=""></div>
+                        <div class="skills-card-name">Java</div>
+                    </div>
+                    <div class="skills-card">
+                        <div><img class="tech_satack_card_img skills-card-img"
+                                src="Images/techStack_mysql_logo.png"
+                                alt=""></div>
+                        <div class="skills-card-name">MySQL</div>
+                    </div>
+                    <div class="skills-card">
+                        <div><img class="tech_satack_card_img skills-card-img"
+                                src="Images/techStack_hibernate.png"
+                                alt=""></div>
+                        <div class="skills-card-name">Hibernate</div>
+                    </div>
+                    <div class="skills-card">
+                        <div><img class="tech_satack_card_img skills-card-img"
+                                src="Images/techStack_Spring_logo.png"
+                                alt=""></div>
+                        <div class="skills-card-name">Spring</div>
+                    </div>
+                    <div class="skills-card">
+                        <div><img class="tech_satack_card_img skills-card-img"
+                                src="Images/techStack_SpringBoot_logo.png"
+                                alt=""></div>
+                        <div class="skills-card-name">Spring Boot</div>
+                    </div>
+                    <div class="skills-card">
+                        <div><img class="tech_satack_card_img skills-card-img"
+                                src="Images/techStack_struts.png"
+                                alt=""></div>
+                        <div class="skills-card-name">Struts</div>
+                    </div>
+                    <div class="skills-card">
+                        <div><img class="tech_satack_card_img skills-card-img"
+                                src="Images/techStack_aws_logo.png"
+                                alt=""></div>
+                        <div class="skills-card-name">aws</div>
+                    </div>
                 </div>
-                <div>
-                    <ul>
-                        
-                        <li style="--i:9;--clr:#c842ab;">
-                            <a href="" style="pointer-events: none"><span><img src="https://assets.stickpng.com/images/58480887cef1014c0b5e48ec.png"
-                                alt="#"></span>Hibernate</a>
-                        </li>
-                        <li style="--i:8;--clr:#0ae1c8;">
-                            <a href="" style="pointer-events: none"><span><img src="https://styles.redditmedia.com/t5_2qm6k/styles/communityIcon_dhjr6guc03x51.png"
-                                alt="#"></span>MySQL</a>
-                            
-                            
-                        </li>
-                        <li style="--i:7;--clr:#18a96a;">
-                            <a href="" style="pointer-events: none"><span><img src="https://img.freepik.com/free-icon/html5_318-903450.jpg?w=2000"
-                                alt="#"></span>html</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li style="--i:6;--clr:#9a1abb;">
-                            <a href="" style="pointer-events: none"><span><img src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
-                                alt="#"></span>css</a>
-                        </li>
-                        <li style="--i:5;--clr:#1da1f2;">
-                            <a href="" style="pointer-events: none"><span><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                                alt="#"></span>Github</a>
-                        </li>
-                        <li style="--i:4;--clr:#24bc7a;">
-                            <a href="" style="pointer-events: none"><span><img
-                                        src="https://pbs.twimg.com/profile_images/1235954979783012354/t9lO8UAz_400x400.png"
-                                        alt="#"></span>sts</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div>
-                    <ul>
-
-                        <li style="--i:3;--clr:#1da1f2;">
-                            <a href="#" style="pointer-events: none"><span><img src="https://e7.pngegg.com/pngimages/934/749/png-clipart-intellij-idea-computer-icons-webstorm-java-computer-software-50-angle-text.png"
-                                        alt="#"></span>intelij</a>
-                        </li>
-                        <li style="--i:2;--clr:#c32aa3;">
-                            <a href="" style="pointer-events: none"><span><img
-                                src="https://pbs.twimg.com/profile_images/1235868806079057921/fTL08u_H_400x400.png"
-                                alt="#"></span>SpringBoot</a>
-                        </li>
-                        <li style="--i:1;--clr:#77c132;">
-                            <a href="#" style="pointer-events: none"><span><img
-                                src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png"
-                                alt="#"></span>vscode</a>
-                            
-                        </li>
-                    </ul>
-                </div>
-
             </div>
+            <div id="tech_stacks">
+                <span><h1>Tools</h1></span>
+                <div id="tech_stack_container">
+                    <div class="skills-card">
+                        <div><img class="tech_satack_card_img skills-card-img"
+                                src="Images/techStack_vsCode_Logo.png"
+                                alt=""></div>
+                        <div class="skills-card-name">VS Code</div>
+                    </div>
+                    <div class="skills-card">
+                        <div><img class="tech_satack_card_img skills-card-img"
+                                src="Images/tool_sts.png"
+                                alt=""></div>
+                        <div class="skills-card-name">STS</div>
+                    </div>
+                    <div class="skills-card">
+                        <div><img class="tech_satack_card_img skills-card-img"
+                                src="Images/tool_intelij.png"
+                                alt=""></div>
+                        <div class="skills-card-name">Intelij</div>
+                    </div>
+                    <div class="skills-card">
+                        <div><img class="tech_satack_card_img skills-card-img"
+                                src="Images/tool_eclips.png"
+                                alt=""></div>
+                        <div class="skills-card-name">Eclips</div>
+                    </div>
+                    <div class="skills-card">
+                        <div><img class="tech_satack_card_img skills-card-img"
+                                src="Images/techStack_gitHub_logo.png"
+                                alt=""></div>
+                        <div class="skills-card-name">github</div>
+                    </div>
+                    <div class="skills-card">
+                        <div><img class="tech_satack_card_img skills-card-img"
+                                src="Images/tool_netlify.svg"></div>
+                        <div class="skills-card-name">Netlify</div>
+                    </div>
+                    <div class="skills-card">
+                        <div><img class="tech_satack_card_img skills-card-img"
+                                src="Images/tools_firebase_logo.png"
+                                alt=""></div>
+                        <div class="skills-card-name">Firebase</div>
+                    </div>
+                    <!--<div class="skills-card">
+                        <div><img class="tech_satack_card_img skills-card-img"
+                                src="https://www.seekpng.com/png/detail/80-803527_html5-css3-and-javascript-logos-html5-logo-png.png"
+                                alt=""></div>
+                        <div class="skills-card-name">HTML</div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
         </div>
 
     </section>
     <!--------------------Projects-------------------->
     <section>
-        <div id="projects"></div>
+        <div>
+            <div id="projects" class="skills_heading">
+                <div class="blankLine"></div>
+                <div>
+                    <h3>Projects</h3>
+                </div>
+                <div class="blankLine"></div>
+            </div>
+
+
+            <div class="projeect_container">
+                <div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 project-card" >
+                            <div class="box">
+                                <img src="Images/project_01.png">
+                                <div class="box-content">
+                                    <h3 class="title project-title">ApnaPathshala</h3>
+                                    <span class="post">An individual project executed in 5 days.</span>
+                                </div>
+                                <ul class="icon">
+                                    <li><a href="https://github.com/Amit0458/swank-meeting-7218" target="_blank" ><i class="fa-brands fa-github"></i></a></li>
+                                    <li><a href="https://apnapathashala.netlify.app/" target="_blank" class="project-deployed-link"><i class="fa-solid fa-globe fa-shake"></i></a></li>
+                                </ul>
+                                <div class="project_card_details">
+                                    <div class="project_Title">
+                                        <h4 class="project-description">Clone of Intern Theory, A internship platform that
+                                            connects employers to young talents.</h4>
+                                    </div>
+                                    <div>
+                                        <div class="projext_tech_stack_cont project-tech-stack">
+                                            <span><i class="fa-brands fa-html5  fa-2xl project_tech_stacks"></i>
+                                                <p>HTML</p>
+                                            </span>
+                                            <span><i class="fa-brands fa-css3-alt  fa-2xl project_tech_stacks"></i>
+                                                <p>CSS</p>
+                                            </span>
+                                            <span><i class="fa-brands fa-square-js  fa-2xl project_tech_stacks"></i>
+                                                <p>JS</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-6 project-card">
+                            <div class="box">
+                                <img src="Images/project_02.png">
+                                <div class="box-content">
+                                    <h3 class="title project-title">Fitness Club</h3>
+                                    <span class="post">A collaborative project built by a team of 5 Full Stack
+                                        developers and executed in 5 days.</span>
+                                </div>
+                                <ul class="icon">
+                                    <li><a href="https://github.com/Amit0458/onerous-train-1093" target="_blank" class="project-github-link"><i class="fa-brands fa-github"></i></a></li>
+                                    <li><a href="https://jefit.netlify.app" target="_blank" class="project-deployed-link"><i class="fa-solid fa-globe fa-shake"></i></a></li>
+                                    
+                                </ul>
+                                <div class="project_card_details">
+                                    <div class="project_Title">
+                                        <h4 class="project-description">Clone of JEFIT, a workout and fitness planner on the market.</h4>
+                                    </div>
+                                    <div>
+                                        <div class="projext_tech_stack_cont project-tech-stack">
+                                            <span><i class="fa-brands fa-html5  fa-2xl project_tech_stacks"></i>
+                                                <p>HTML</p>
+                                            </span>
+                                            <span><i class="fa-brands fa-css3-alt  fa-2xl project_tech_stacks"></i>
+                                                <p>CSS</p>
+                                            </span>
+                                            <span><i class="fa-brands fa-square-js  fa-2xl project_tech_stacks"></i>
+                                                <p>JS</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 project-card">
+                            <div class="box">
+                                <img src="Images/project_03.png">
+                                <div class="box-content">
+                                    <h3 class="title project-title">Marshal services</h3>
+                                    <span class="post">An individual project executed in 5 days.</span>
+                                </div>
+                                <ul class="icon">
+                                    <li><a href="https://github.com/Amit0458/adventurous-sweater-7809" target="_blank" class="project-github-link"><i class="fa-brands fa-github"></i></a></li>
+                                    <li><a href="https://drive.google.com/file/d/1Sbdcx_aNZ5us9VF37tD_X4pUNUkdt-ZZ/view?usp=share_link" target="_blank" class="project-deployed-link"><i class="fa-solid fa-video fa-shake"></i></a></li>
+                                </ul>
+                                <div class="project_card_details">
+                                    <div class="project_Title">
+                                        <h4 class="project-description">This is a clone of Intern Theory. Intern Theory is a internship platform
+                                            that
+                                            connects employers to young talents.</h4>
+                                    </div>
+                                    <div>
+                                        <div class="projext_tech_stack_cont project-tech-stack">
+                                            <span><i class="fa-brands fa-java  fa-2xl project_tech_stacks"></i></i>
+                                                <p>JAVA</p>
+                                            </span>
+                                            <span><i class="fa-solid fa-database  fa-2xl project_tech_stacks"></i></i>
+                                                <p>MySQL</p>
+                                            </span>
+                                            <span><i class="fa-solid fa-plug  fa-2xl project_tech_stacks"></i></i>
+                                                <p>JDBC</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 col-sm-6 project-card">
+                            <div class="box">
+                                <img src="Images/project_04.png">
+                                <div class="box-content">
+                                    <h3 class="title project-title">Amit Chakraborty</h3>
+                                    <span class="post">Developer</span>
+                                </div>
+                                <ul class="icon">
+                                    <li><a href="#" target="_blank" class="project-github-link"><i class="fa fa-search"></i></a></li>
+                                    <li><a href="#" target="_blank" class="project-deployed-link"><i class="fa fa-link"></i></a></li>
+                                </ul>
+                                <div class="project_card_details">
+                                    <div class="project_Title">
+                                        <h4 class="project-description">This is a clone of Intern Theory. Intern Theory is a internship platform
+                                            that
+                                            connects employers to young talents.</h4>
+                                    </div>
+                                    <div>
+                                        <div class="projext_tech_stack_cont project-tech-stack">
+                                            <span><i class="fa-brands fa-html5  fa-2xl project_tech_stacks"></i>
+                                                <p>HTML</p>
+                                            </span>
+                                            <span><i class="fa-brands fa-css3-alt  fa-2xl project_tech_stacks"></i>
+                                                <p>CSS</p>
+                                            </span>
+                                            <span><i class="fa-brands fa-square-js  fa-2xl project_tech_stacks"></i>
+                                                <p>JS</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!--------------------Contact---------------------->
     <section>
-        <div id="contact"></div>
+        <div id="contact" class="nav-link contact"></div>
     </section>
 
+    <!------------------Mobile_menu-------------------->
     <div class="hamburger_After">
         <ul>
-            <li><a href="#Home" class="nav-link home active">Home</a></li>
-            <li><a href="#about" class="nav-link about">About</a></li>
-            <li><a href="#skills" class="nav-link skills">Skills</a></li>
-            <li><a href="#projects" class="nav-link projects">Projects</a></li>
-            <li><a href="#contact" class="nav-link contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="https://drive.google.com/uc?id=1T80SkoPVnuLICsYl9WRw-J3qJ1hpbiCb&export=download"
                     target="_parent"><span><svg class="download nav-link resume" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512">
@@ -242,6 +453,7 @@
         </ul>
     </div>
 </body>
-<script src="./script.js"></script>
+<script src="scripts/mobile_menu.js"></script>
+<script src="scripts/project_slider.js"></script>
 
 </html>

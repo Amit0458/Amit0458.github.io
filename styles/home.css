@@ -1,0 +1,98 @@
+/* ------------Body Neutralization---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 79px;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-font-feature-smotthing: antialiased;
+    position: relative;
+}
+
+/* -----------------Home---------------- */
+#container {
+    padding: 10px 10%;
+}
+
+#home {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Profile_image {
+    width: 55%;
+    height: 40%;
+    padding-left: 70px;
+    margin-top: 20px;
+    padding-top: 40px;
+}
+
+#Profile_image img {
+    width: 75%;
+    object-fit: scale-down;
+    border-radius: 60px;
+}
+.role_visible {
+    display: none;
+}
+.wrapper {
+    display: inline-flex;
+}
+
+.wrapper .static-text {
+    font-size: 35px;
+
+} 
+.wrapper .dynamic-texts {
+    font-size: 30px;
+    margin-left: 15px;
+    overflow: hidden;
+} 
+.dynamic-texts li {
+    list-style: none;
+    font-size: 35px;
+    color: #ff004f;
+    font-weight: 500;
+}
+.dynamic-texts li span {
+    position: relative;
+}
+.dynamic-texts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #080808;
+    border-left:2px solid #ff004f;
+    animation: typing 5s steps(22) infinite
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+@media only screen and (max-width:1140px) {
+    
+    
+} 
+@media only screen and (max-width:479px) {
+    .wrapper {
+        display: none;
+    }
+    .role_visible {
+        display: block;
+        padding: 5px 2%;
+        font-size: 22px;
+    }
+}

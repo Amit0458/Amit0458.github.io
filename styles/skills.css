@@ -1,0 +1,100 @@
+#skills {
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 300px;
+    margin-bottom: 100px;
+    text-align: center;
+    padding: 10px 10%;
+}
+#skills_container {
+    display: flex;
+    margin-top: 10vh;
+}
+#tech_stack_container  {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin: auto;
+    padding: 15px 5%;
+}
+#tech_stack_container>div {
+    padding: 10px 2%;
+}
+#tech_stacks {
+    width: 100%;
+    margin: auto;
+    min-height: 1000px;
+    justify-content: center;
+    align-items: center;
+}
+#tech_stacks span {
+    display: block;
+    border-bottom: 1px solid rgb(153, 1, 1);
+    width: 250px;
+    margin: auto;
+    padding: 2%;
+    margin-bottom: 30px; 
+}
+#tech_stacks h1 {
+    font-size: 4.5vh;
+    font-style:unset;
+    font-weight: 300;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+#tech_stack_container div>div:nth-child(1){
+    min-height: 125px;
+    min-width: 100px;
+    padding: 10px 1%;
+}
+#tech_stack_container div>div:nth-child(2){
+    padding: 10px 1%;
+}
+.tech_satack_card_img {
+    width: 70px;
+    object-fit: scale-down;
+
+}
+#tech_stack_container>div:hover {
+    transition: .7s;
+    transform: scale(1.1);
+    border: 1px solid #ff004f;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(255, 49, 49, 0.519) 0px 4px 6px -1px, rgba(251, 36, 36, 0.08) 0px 1px 0px inset;
+    border-radius: 12px;
+    
+}
+
+  
+@media only screen and (max-width:1140px) {
+    #skills {
+        margin-top: 30vh;
+        margin-bottom: 14vh;
+    }
+    #skills_container  {
+        flex-direction: column;
+    }
+    #skills_container>div:nth-child(2) {
+    }
+    #tech_stacks span {
+            display: block;
+            border-bottom: 1px solid rgb(153, 1, 1);
+            width: 350px;
+            margin: auto;
+            padding: 2%;
+            margin-bottom: 30px;
+    }
+    
+} 
+@media only screen and (max-width:479px) {
+    #skills {
+        margin-top: 110vh;
+        margin-bottom: 10vh;
+    }
+    #tech_stack_container  {
+        grid-template-columns: repeat(2,1fr);
+    }
+    #skills_container>div:nth-child(2) {
+        margin-top: 10vh;
+        margin-bottom: -3vh;
+    }
+}
+  
