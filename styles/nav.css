@@ -114,7 +114,8 @@
 }
 
 .hamburger_After {
-    display: none;
+    /* display: none; */
+    opacity: 0;
 }
 
 @media only screen and (max-width:1140px) {
@@ -140,7 +141,8 @@
     }
 
     #nav_list {
-        display: none;
+        /* display: none; */
+        opacity: 0;
     }
 
     /* ---------Ham--After----- */
