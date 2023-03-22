@@ -14,3 +14,9 @@ cross.addEventListener('click', () => {
     cross.classList.toggle('cross_visibility');
     console.log("here");
 })
+// window.onscroll = () => {
+//     nav.classList.remove('nav_visibility');
+//     // cross.classList.remove('cross_visibility');
+//     cross.classList.toggle('cross_visibility');
+//     // navlist.classList.remove('open')
+// };

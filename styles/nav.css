@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .logo {
@@ -21,7 +21,7 @@
 
 .nav_list_ul {
     display: flex;
-    flex-shrink: initial;
+    /* flex-shrink: initial; */
 }
 
 #nav-menu ul li {
@@ -100,7 +100,7 @@
     border-radius: 4px;
 }
 
-@media only screen and (max-width:1140px) {
+@media only screen and (max-width:840px) {
     #nav-menu {
         height: 10vh;
     }
