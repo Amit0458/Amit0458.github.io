@@ -1,14 +1,13 @@
 #skills {
     align-items: center;
     min-height: auto;
-    margin-top: 300px;
-    /* margin-bottom: 100px; */
     text-align: center;
     padding: 10px 10%;
 }
 #skills_container {
     display: flex;
     margin-top: 10vh;
+    margin-bottom: 5vh;
 }
 #tech_stack_container  {
     display: grid;
@@ -27,19 +26,12 @@
     justify-content: center;
     align-items: center;
 }
-#tech_stacks span {
-    display: block;
-    border-bottom: 1px solid rgb(153, 1, 1);
-    width: 250px;
-    margin: auto;
-    padding: 2%;
-    margin-bottom: 30px; 
-}
+
 #tech_stacks h1 {
-    font-size: 4.5vh;
-    font-style:unset;
-    font-weight: 300;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-size: 4vh;
+    font-style:inherit;
+    font-weight: 600;
+    padding: 20px 5%;
 }
 #tech_stack_container div>div:nth-child(1){
     min-height: 125px;
@@ -74,20 +66,12 @@
     }
     #skills_container>div:nth-child(2) {
     }
-    #tech_stacks span {
-            display: block;
-            border-bottom: 1px solid rgb(153, 1, 1);
-            width: 350px;
-            margin: auto;
-            padding: 2%;
-            margin-bottom: 30px;
-    }
+
     
 } 
 @media only screen and (max-width:479px) {
     #skills {
-        /* margin-top: 110vh; */
-        /* margin-bottom: 10vh; */
+        margin-bottom: 10vh;
     }
     #tech_stack_container  {
         grid-template-columns: repeat(2,1fr);

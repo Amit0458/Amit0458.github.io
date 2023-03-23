@@ -1,23 +1,31 @@
 /* ----------------------------------------------------New--------------------------------      */
+#projects_heading{
+  width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px 10%;
+}
+#projects_heading  h3{
+  font-size: 30px;
+  font-weight: 600;
+}
 .projeect_container {
-  margin-top: 10vh;
-  min-height: 150vh;
+  margin-top: 5vh;
   padding: 10px 10%;
 }
-
 .row {
   width: 100%;
   display: flex;
   margin: 0 20px 30px 0;
   padding: 20px 2%;
-
 }
 
 .box {
   text-align: center;
   overflow: hidden;
   position: relative;
-  min-height: 48h;
+  min-height: 48vh;
   background-color: #302d2d;
   border-radius: 10px;
   box-shadow: -20px 14px 20px rgba(251, 247, 247, 0.2);

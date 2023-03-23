@@ -37,13 +37,12 @@
     color: #ff004f;
 }
 #About_cont{
-    writing-mode:horizontal-tb;
-    scroll-padding-top: -10px;
+    min-height: 80vh;
 }
 #about {
     padding: 10px 10%;
     width: 100%;
-    /* height: 40vh; */
+    height: 40vh;
     margin-top: 40px;
     background: #080808;
     scroll-snap-align: start none;
@@ -59,7 +58,8 @@
 
 .about_heading div h3,
 .skills_heading div h3 {
-    font-size: 26px;
+    font-size: 30px;
+    font-weight: 600;
     display: block;
 }
 
@@ -113,8 +113,9 @@
         flex-direction: column;
     }
 
-    #about {
-        
+    #About_cont{
+       height: 160vh;
+       margin-bottom: 10vh;
     }
 
     #about div:nth-child(3) ul {

@@ -1,36 +1,28 @@
-:root{
-    --bg-color: #2a2a2a;
-    --second-bg-color: #202020;
-    --text-color: #fff;
-    --second-color: #fff;
-    --main-color: #ff004f;
-    --big-font: 5rem;
-    --h2-font: 3rem;
-    --p-font: 1.1rem;
-}
 #contact{
+    width: 100%;
     margin-top: 10vh;
-    background: var(--second-bg-color);
+    background: #202020;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 2.5rem;
     padding: 40px 15%;
+    overflow-x: hidden;
 }
 
 .nav-link-contact h4{
-    color: var(--text-color);
+    color:#fff;
     margin: 18px 0;
     font-size: 20px;
     font-weight: 600;
 }
 .nav-link-contact h2{
-    font-size: var(--h2-font);
+    font-size: 3rem;
     line-height: 1;
 }
 .nav-link-contact p{
-    color: var(--second-color);
-    font-size: var(--p-font);
+    color: #fff;
+    font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 30px;
 }
@@ -43,21 +35,21 @@
 }
 .list li a{
     display: block;
-    color: var(--second-color);
+    color: #fff;
     font-size: 14px;
     transition: all .45s ease;
     text-decoration: none;
 }
 .list li a:hover{
-    color: var(--text-color);
+    color: #fff;
     transform: translateX(5px);
 }
 .contact-icons a{text-decoration: none;}
 .contact-icons i{
     height:  45px;
     width: 45px;
-    background: var(--main-color);
-    color: var(--text-color);
+    background: #ff004f;
+    color: #fff;
     font-size: 22px;
     display: inline-flex;
     align-items: center;
@@ -67,8 +59,8 @@
     transition: all .45s ease;
 }
 .contact-icons i:hover{
-    background-color: var(--text-color);
-    color: var(--main-color);
+    background-color: #fff;
+    color: #ff004f;
 }
 .contact-form form{
     position: relative;
@@ -76,8 +68,8 @@
 .contact-form form input, form textarea{
     width: 100%;
     padding: 14px;
-    background: var(--bg-color);
-    color: var(--text-color);
+    background: #2a2a2a;
+    color: #fff;
     border: none;
     outline: none;
     font-size: 15px;
@@ -91,8 +83,8 @@
 .contact-form .submit{
     display: inline-block;
     font-size: 16px;
-    background: var(--main-color);
-    color: var(--text-color);
+    background: #ff004f;
+    color: #fff;
     width: 160px;
     transition: all .45s ease;
 }
@@ -103,7 +95,7 @@
 @media only screen and (max-width:1140px) {
     #contact {
         grid-template-columns: repeat(1,1fr);
-        padding: 20px 10%;
+        padding: 10px 10%;
     }
 } 
 @media only screen and (max-width:479px) {
