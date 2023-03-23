@@ -48,7 +48,6 @@
   font-weight: 300;
 }
 
-.project_Title {}
 
 .project_tech_stacks {
   padding: 20px;
@@ -173,7 +172,6 @@
 }
 
 @media only screen and (max-width:1140px) {
-  .col-md-4 {}
 
   .box {margin: 0 0 30px; }
 
@@ -202,8 +200,6 @@
   }
   .box {
     margin: 10px 0 50px; 
-  }
-  .box img {
   }
   .row {
     flex-wrap: wrap;

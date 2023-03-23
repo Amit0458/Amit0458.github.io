@@ -59,15 +59,10 @@
 @media only screen and (max-width:1140px) {
     #skills {
         margin-top: 30vh;
-        /* margin-bottom: 14vh; */
     }
     #skills_container  {
         flex-direction: column;
     }
-    #skills_container>div:nth-child(2) {
-    }
-
-    
 } 
 @media only screen and (max-width:479px) {
     #skills {
