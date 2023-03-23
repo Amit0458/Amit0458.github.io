@@ -99,7 +99,14 @@
     margin: 5px 3px;
     border-radius: 4px;
 }
-
+@media only screen and (max-width:1140px) {
+    .logo {
+        width: 110px;
+        left: 2;
+        top: 14px;
+        padding: 2px;
+    }
+}
 @media only screen and (max-width:840px) {
     #nav-menu {
         height: 10vh;
