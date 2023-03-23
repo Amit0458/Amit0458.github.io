@@ -1,8 +1,8 @@
 #skills {
     align-items: center;
-    min-height: 100vh;
+    min-height: auto;
     margin-top: 300px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     text-align: center;
     padding: 10px 10%;
 }
@@ -67,7 +67,7 @@
 @media only screen and (max-width:1140px) {
     #skills {
         margin-top: 30vh;
-        margin-bottom: 14vh;
+        /* margin-bottom: 14vh; */
     }
     #skills_container  {
         flex-direction: column;
@@ -86,8 +86,8 @@
 } 
 @media only screen and (max-width:479px) {
     #skills {
-        margin-top: 110vh;
-        margin-bottom: 10vh;
+        /* margin-top: 110vh; */
+        /* margin-bottom: 10vh; */
     }
     #tech_stack_container  {
         grid-template-columns: repeat(2,1fr);

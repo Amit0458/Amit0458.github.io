@@ -17,15 +17,17 @@
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/skills.css">
     <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/gitStats.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css/">
-
 </head>
 
 <body>
     <!---------------------NavBar-------------------->
     <header>
         <nav>
-            <div id="nav-menu" class="" >
+            <div id="nav-menu" class="">
                 <img src="./Images/logo_withoutBg.png" class="logo">
                 <ul class="nav_list_ul">
                     <li class="nav-link home"><a href="#home">Home</a></li>
@@ -36,9 +38,8 @@
                     <li class="nav-link resume" id="resume-button-1"><a
                             onclick="window.open('https://drive.google.com/file/d/1T80SkoPVnuLICsYl9WRw-J3qJ1hpbiCb/view?usp=share_link')"
                             href="https://drive.google.com/uc?id=1T80SkoPVnuLICsYl9WRw-J3qJ1hpbiCb&export=download"
-                            target="_blank" download="" id="resume-link-1"><span><svg
-                                    class="download nav-link resume" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 512 512">
+                            target="_blank" download="" id="resume-link-1"><span><svg class="download nav-link resume"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path
                                         d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
                                 </svg></span> Resume</a></li>
@@ -60,7 +61,7 @@
     <section>
         <div>
             <div id="container">
-                <div id="home" >
+                <div id="home">
                     <div class="header-text">
                         <h1 id="user-detail-name">Hello, I'm <br><span>Amit </span> Chakraborty</h1>
                         <p class="role_visible">I'm a Java Backend Developer</p>
@@ -104,10 +105,9 @@
                                 viewBox="0 0 448 512">
                                 <path
                                     d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z" />
-                            </svg></span>A hardworking and competent JAVA backend developer, with
-                        a
+                            </svg></span>A hardworking and competent java Backend developer, with
                         strong proficiency in
-                        designing and implementing complex systems using various JAVA technologies.
+                        Java, Spring Boot, SQL, REST APIs, Git/Github, AWS, HTML, CSS, Javascript, OOPS etc.
                         A deep understanding of data structures, algorithms which enables me to create efficient,
                         scalable,
                         and maintainable code.
@@ -448,10 +448,81 @@
             </div>
         </div>
     </section>
-    <!--------------------Contact---------------------->
+    <!---------------------Stats--------------------->
     <section>
-        <div id="contact"></div>
+        <div id="git-stats">
+            <div id="projects" class="skills_heading">
+                <div class="blankLine"></div>
+                <div>
+                    <h3>Stats</h3>
+                </div>
+                <div class="blankLine"></div>
+            </div>
+            <div>
+                <img  id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Amit0458&theme=radical&layout=compact&langs_count=10&title_color=#ff004f&text_color=ffffff&icon_color=ffffff&bg_color=#080808&hide_border=true&locale=en"
+                    alt="">
+            </div>
+            <div id="top_row">
+                <div>
+                    <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=Amit0458&theme=radical&type=png"
+                        alt="">
+                </div>
+                <div>
+                    <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=Amit0458&show_icons=true&theme=radical"
+                        alt="">
+                </div>
+            </div>
+            
+            <div id="git-stats-calender">
+                <img class="react-activity-calendar" src="https://ghchart.rshah.org/Amit0458" alt="Amit's Github chart" />
+            </div>
+        </div>
     </section>
+    <!--------------------Contact---------------------->
+     <section class="nav-link.contact" id="contact">
+        <div class="nav-link-contact">
+            <h2>Contact <span>Me!</span></h2>
+            <h4>Let's work together!</h4>
+            <p>Fill the form to connect <i class="fas fa-smile"></i>
+            </p>
+            <div class="list">
+                <li><a href="#" id="contact-phone">+91-9800255068</a></li>
+                <li><a href="www.gmail.com" id="contact-email"> amitkumar51997@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/amit-chakrabortty-568213109/" id="contact-linkedin"> linkedin : Amit Chakraborty</a></li>
+                <li><a href="https://github.com/Amit0458" id="contact-github" ><i class='bx bxl-github' ></i><span>github</span></a></li>
+            </div>
+            <div class="contact-icons">
+                <a href="https://www.instagram.com/amiii_rocks/" id="contact-linkedin"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/amit-chakrabortty-568213109/" id="contact-linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/amit.chakrabortty2"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#0"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+        </div>
+        <div class="contact-form">
+            <form>
+                <input type="name" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="" id="mobile-number" placeholder="Mobile Number" required>
+                <textarea name="" id="message" cols="35" rows="10" placeholder="How Can I Help You" required></textarea>
+                <input type="submit" value="Send Message" class="submit" required>
+            </form>
+        </div>
+
+     </section>
+
+     <!-----------footer------------->
+     <footer>
+     <section class="end">
+        <div> <p>Made by Amit with<i class="fa-solid fa-heart fa-xl" style="color: #ff0000; margin-left: 5px;"></i></p></div>
+        <div class="last-text">
+            <p>Copyright © 2023 by AmitC AllRights Reserved. </p>
+        </div>
+        <div class="top">
+            <a href="#home"><i class="fa-solid fa-arrow-up-long fa-bounce"></i></a>
+        </div>
+     </section>
+    </footer>
 </body>
 <script src="scripts/mobile_menu.js"></script>
 

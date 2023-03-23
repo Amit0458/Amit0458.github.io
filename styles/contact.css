@@ -1,0 +1,111 @@
+:root{
+    --bg-color: #2a2a2a;
+    --second-bg-color: #202020;
+    --text-color: #fff;
+    --second-color: #fff;
+    --main-color: #ff004f;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+#contact{
+    margin-top: 10vh;
+    background: var(--second-bg-color);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2.5rem;
+    padding: 40px 15%;
+}
+
+.nav-link-contact h4{
+    color: var(--text-color);
+    margin: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.nav-link-contact h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+.nav-link-contact p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+.list{
+    margin-bottom: 2.8rem;
+}
+.list li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+.list li a{
+    display: block;
+    color: var(--second-color);
+    font-size: 14px;
+    transition: all .45s ease;
+    text-decoration: none;
+}
+.list li a:hover{
+    color: var(--text-color);
+    transform: translateX(5px);
+}
+.contact-icons a{text-decoration: none;}
+.contact-icons i{
+    height:  45px;
+    width: 45px;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-size: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+.contact-icons i:hover{
+    background-color: var(--text-color);
+    color: var(--main-color);
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input, form textarea{
+    width: 100%;
+    padding: 14px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.contact-form textarea{
+    resize: none;
+    height: 240px;
+}
+.contact-form .submit{
+    display: inline-block;
+    font-size: 16px;
+    background: var(--main-color);
+    color: var(--text-color);
+    width: 160px;
+    transition: all .45s ease;
+}
+.contact-form .submit:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+@media only screen and (max-width:1140px) {
+    #contact {
+        grid-template-columns: repeat(1,1fr);
+        padding: 20px 10%;
+    }
+} 
+@media only screen and (max-width:479px) {
+    
+}

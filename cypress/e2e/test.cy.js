@@ -156,7 +156,7 @@ describe("Test", function () {
 
               let Stack_value = 0;
               for (let i = 0; i < stack.length; i++) {
-                if (text.includes(stack[i].toLowerCase())) {
+                if (text.toLowerCase().includes(stack[i].toLowerCase())) {
                   Stack_value++;
                 }
               }
