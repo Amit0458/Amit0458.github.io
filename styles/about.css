@@ -48,13 +48,29 @@
 
 #user-detail-about {
     font-size: 1.5rem;
-    line-height: 1.6rem;
+    line-height: 2.2rem;
     word-spacing: 0.1rem;
     font-weight: 650;
     word-wrap:normal;
     color: var(--clr-fg);
     
 }
+
+#user-detail-about-div-p {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        word-spacing: 0.1rem;
+        font-weight: 650;
+        word-wrap: normal;
+        color: var(--clr-fg);
+        margin-top: 24px;
+}
+
+#user-detail-about-div-p>p {
+    margin-top: 10px;
+    padding: 0;
+}
+
 #about_intrests {
     padding-top: 20px;
 }
@@ -66,6 +82,7 @@
 #about_intrests ul li span{
     font-size: 1.5rem;
     font-weight: 650;
+    cursor:pointer;
 }
 
 @media only screen and (max-width:1140px) {

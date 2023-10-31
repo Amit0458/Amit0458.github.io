@@ -32,6 +32,12 @@
   border-radius: 25px;
   flex-basis: 40%;
   transition: all .5s ease 0s;
+  border:1px solid var(--clr-primary);
+}
+
+.project_inner_left,
+.project_inner_right {
+  flex: 1;
 }
 
 .project_card:hover {
@@ -39,7 +45,7 @@
 } 
 .project_inner_left {
   height: auto;
-  min-width: 65%;
+  min-width: 63%;
   padding: 20px 3%;
   border-radius: 25px;
 }
@@ -51,7 +57,7 @@
 }
 .project_inner_right {
   height: auto;
-  min-width: 35%;
+  min-width: 37%;
   display: flex;
   flex-direction: column;
   padding: 30px 2%;
@@ -59,10 +65,9 @@
 }
 
 .project-title {
-  padding: 10px 10%;
   font-size: 2.6rem;
   font-weight: 700;
-  padding: 10px 5%;
+  white-space: none;
 }
 
 .project-description {
@@ -75,13 +80,15 @@
   padding: 10px 5%;
 }
 
-.project_tech_stacks {
-  padding: 20px;
+.project_tech_stacks_span  {
+  padding: 20px 12px;
+  cursor: pointer;
 }
 
 .projext_tech_stack_cont {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 15px 10%;
 }
 
@@ -97,10 +104,11 @@
 .project_source_button {
   min-width: 120px;
   height: 40px;
+  padding: 0 5%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2px;
+  margin: 10px;
   border: 2px solid var(--clr-primary);
   position: relative;
 }

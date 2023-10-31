@@ -29,11 +29,14 @@ toggle.addEventListener('click', () => {
     }
 })
 
+// Make the navigation bar sticky when scrolling
 window.addEventListener("scroll", () => {
     const position = window.scrollY;
-    // console.log(position);
-    if(position > 20) {
-
+    const navMenu = document.querySelector("#nav-menu");
+    if (position > 20) {
+        navMenu.classList.add("sticky");
+    } else {
+        navMenu.classList.remove("sticky");
     }
 });
 
