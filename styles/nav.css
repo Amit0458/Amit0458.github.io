@@ -102,15 +102,15 @@
 }
 
 #toggle::before {
-    content: attr(title);
+    content: 'Toggle';
     display: none;
     position: absolute;
-    top: -30px;
+    top: 60px;
     left: 50%;
     transform: translateX(-50%);
     padding: 5px 10px;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
+    background: var(--clr-fg-alt);
+    color: var(--clr-primary);
     border-radius: 5px;
     font-size: 14px;
     white-space: nowrap;

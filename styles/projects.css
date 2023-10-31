@@ -67,17 +67,18 @@
 .project-title {
   font-size: 2.6rem;
   font-weight: 700;
-  white-space: none;
+  white-space: nowrap;
 }
 
 .project-description {
-  height: 155px;
+  height: fit-content;
   display: flex;
   align-items: center;
   text-align:center;
   font-size: 1.3rem;
   font-weight: 500;
   padding: 10px 5%;
+  padding-top: 12px;
 }
 
 .project_tech_stacks_span  {
