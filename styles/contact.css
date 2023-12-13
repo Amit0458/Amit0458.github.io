@@ -5,7 +5,12 @@
     text-align: center;
     padding: 10px 10%;
 }
-
+.contact-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .nav-link-contact h2{
     font-size: 3rem;
     line-height: 1;
@@ -36,7 +41,7 @@
 .contact-icons i{
     height:  45px;
     width: 45px;
-    background: #ff004f;
+    background: var(--clr-primary);
     color: #fff;
     font-size: 22px;
     display: inline-flex;
@@ -48,7 +53,7 @@
 }
 .contact-icons i:hover{
     background-color: #fff;
-    color: #ff004f;
+    color: var(--clr-primary);
 }
 
 @media only screen and (max-width:1140px) {
@@ -57,5 +62,8 @@
     }
 } 
 @media only screen and (max-width:479px) {
-    
+    .contact-icons {
+        flex-direction: column;
+        gap: 15px;
+    }
 }

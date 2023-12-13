@@ -4,7 +4,7 @@
     text-align: center;
     padding: 10px 10%;
 }
-#tech_stacks h3 {
+.tech_stacks h3 {
     font-size: 3rem;
     font-weight: 800;
 }
@@ -29,15 +29,14 @@
     width: 130px;
     padding: 5% 10px;
     border-radius: 25px;
-    background-color: rgb(35, 40, 62)w;
-    box-shadow: var(--shadow);
-    transition: all .5s ease 0s;
+    box-shadow: rgba(0, 0, 0, 0) 0px 54px 55px, rgba(0, 0, 0, 0) 0px -12px 30px, rgba(0, 0, 0, 0) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    transition: transform 0.3s ease-in-out;
 }
+
 .skills-card-name { 
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 500;
 }
-#tech_stacks {
+.tech_stacks {
     width: 100%;
     margin: auto;
     min-height: auto;
@@ -45,7 +44,7 @@
     align-items: center;
     margin-bottom: 10vh;
 }
-#tech_stacks>div:first-child {
+.tech_stacks>div:first-child {
     margin-bottom: 5%;
 }
 
@@ -59,15 +58,12 @@
 }
 #tech_stack_container>div:hover {
     transform: scale(1.1); 
-    border: 2px solid #fdf3f6;
-    box-shadow: rgba(119, 130, 144, 0.4) 0px 0px 0px 2px, rgba(249, 212, 212, 0.519) 0px 4px 6px -1px, rgba(252, 208, 208, 0.08) 0px 1px 0px inset;
-    border-radius: 25px;
 }
 @media only screen and (max-width: 1024px)  {
     #skills_container  {
         flex-direction: column;
     }
-    #tech_stacks>div:first-child {
+    .tech_stacks>div:first-child {
         margin-bottom: 10%;
     }
     #tech_stack_container  {
@@ -77,8 +73,6 @@
     }
     .skills-card {
         padding: 5% 10px;
-        background-color: rgb(35, 40, 62)w;
-        box-shadow: var(--shadow);
     }
 }
 
@@ -86,7 +80,7 @@
     #skills {
         margin-bottom: 10vh;
     }
-    #tech_stacks>div:first-child {
+    .tech_stacks>div:first-child {
         margin-bottom: 30%;
     }
     #tech_stack_container  {
@@ -99,8 +93,6 @@
         width: 120px;
         padding: 5% 10px;
         border-radius: 25px;
-        background-color: rgb(35, 40, 62)w;
-        box-shadow: var(--shadow);
     }
     #skills_container>div:nth-child(2) {
         margin-top: 10vh;

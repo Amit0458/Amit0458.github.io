@@ -28,11 +28,10 @@
   justify-content: center;
   text-align: center;
   background: var(--clr-bg);
-  box-shadow: var(--shadow);
+  box-shadow: rgba(0, 0, 0, 0) 0px 54px 55px, rgba(0, 0, 0, 0) 0px -12px 30px, rgba(0, 0, 0, 0) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    transition: transform 0.3s ease-in-out;
   border-radius: 25px;
   flex-basis: 40%;
   transition: all .5s ease 0s;
-  border:1px solid var(--clr-primary);
 }
 
 .project_inner_left,
@@ -56,22 +55,20 @@
   object-fit: scale-down;
 }
 .project_inner_right {
-  height: auto;
-  min-width: 37%;
+  min-width: 40%;
   display: flex;
   flex-direction: column;
-  padding: 30px 2%;
+  padding: 30px 3%;
   border-radius: 25px;
 }
 
 .project-title {
   font-size: 2.6rem;
   font-weight: 700;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .project-description {
-  height: fit-content;
   display: flex;
   align-items: center;
   text-align:center;
@@ -90,7 +87,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 10%;
+  padding: 10px 5%;
 }
 
 .project_buttons {
@@ -175,24 +172,33 @@
     padding: 10px 5%;
   }
   .project_card {
-    height: 480px;
+    height: 510px;
     flex-direction: column;
     margin: 2% 0 2% 0;
+    padding: 5% 0px;
+  }
+  .project_inner_left {
+    margin-top: 2px;
+    margin-bottom: 0px;
   }
   .project_inner_right {
     width: 100%;
-    padding: 80px 2%;
+    padding-top: 80px;
+    padding: 0 7%;
   }
   .project-description {
+    width: 100%;
     height: 140px;
-    padding: 10px 10%;
+    padding: 0px;
+  }
+  .projext_tech_stack_cont {
+    padding: 0px;
   }
   .project_source_button {
     min-width: 80px;
     font-size: 1.1rem;
     height: 30px;
-    margin-bottom: 15px;
-    
+    margin-bottom: 25px;
   }
   .project_source_button i {
     padding: 0 5px;
